@@ -28,4 +28,4 @@ leaflet(data = S_MPOS) %>%
               popup = S_MPOS@data$NOM_MUN)%>%
   addLegend(pal = pal, values = ~S_MPOS$POBLACION, opacity = 1)
 ```
-#![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+#![alt tag](https://github.com/edroga/Mexico-Choropleth-map/blob/master/choropleth.png)
