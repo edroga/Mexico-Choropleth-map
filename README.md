@@ -8,7 +8,7 @@ library(leaflet)
 library(maptools)
 library(RColorBrewer)
 ```
-we have to read the shp files. All data was taken from the INEGI website (it is available, here)
+We have to read the shp files. All data was taken from the INEGI website (Data is available, [here](https://github.com/edroga/Mexico-Choropleth-map/blob/master/mexico_shp.rar))
 ```{r}
 S_MPOS <- readOGR(".", layer = "subset_mposPOP", encoding = "UTF-8")
 ```
@@ -28,6 +28,6 @@ leaflet(data = S_MPOS) %>%
               popup = S_MPOS@data$NOM_MUN)%>%
   addLegend(pal = pal, values = ~S_MPOS$POBLACION, opacity = 1)
 ```
-you can click on any coloured region and the name of it will be displayed
+you can click on any coloured region and the name of it will be displayed.
 
 #![alt tag](https://github.com/edroga/Mexico-Choropleth-map/blob/master/choropleth.png)
