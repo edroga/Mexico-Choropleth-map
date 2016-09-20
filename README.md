@@ -17,7 +17,7 @@ once the file is read, then we asigne a palate for the 141 entities
 pal <- colorNumeric("YlOrRd", NULL, n = 141) #n numero de variables a colorear
 ```
 
-we use leaflet and maptools to make the Choropleth map
+we use leaflet make the Choropleth map
 ```{r}
 leaflet(data = S_MPOS) %>%
   addProviderTiles("CartoDB.Positron") %>%
